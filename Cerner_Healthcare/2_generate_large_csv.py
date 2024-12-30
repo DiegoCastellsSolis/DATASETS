@@ -92,9 +92,9 @@ def generate_claims_csv(file_path, num_records, max_vaccination_id):
             writer.writerow([i, vaccination_id, claim_date.date(), amount, status])
 
 # Generar archivos CSV con un mayor volumen de datos
-generate_vaccines_csv("vaccines_large.csv", 1000)
-generate_patient_csv("patient_large.csv", 5000)
-generate_practice_csv("practice_large.csv", 100)
-generate_practice_patient_csv("practice_patient_large.csv", 5000, 5000, 100)
-generate_vaccinations_csv("vaccinations_large.csv", 10000, 5000, 100, 1000)
-generate_claims_csv("claims_large.csv", 10000, 10000)
+generate_vaccines_csv("vaccines.csv", 1000)
+generate_patient_csv("patient.csv", 5000)
+generate_practice_csv("practice.csv", 100)
+generate_practice_patient_csv("practice_patient.csv", 5000, 5000, 100)
+generate_vaccinations_csv("vaccinations.csv", 10000, 5000, 100, 1000)
+generate_claims_csv("claims.csv", 10000, 10000)
